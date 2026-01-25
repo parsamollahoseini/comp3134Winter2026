@@ -1,0 +1,233 @@
+====================
+Domain: google.com
+====================
+
+Domain Information
+------------------
+Domain: google.com
+Registered On: 1997-09-15
+Expires On: 2028-09-14
+Updated On: 2019-09-09
+
+Status:
+client delete prohibited
+client transfer prohibited
+client update prohibited
+server delete prohibited
+server transfer prohibited
+server update prohibited
+
+Name Servers:
+ns1.google.com
+ns2.google.com
+ns3.google.com
+ns4.google.com
+
+Registrar Information
+---------------------
+Registrar: MarkMonitor Inc.
+IANA ID: 292
+Email: https://www.markmonitor.com/contact-us/
+Abuse Email: abusecomplaints@markmonitor.com
+Abuse Phone: +1.2086851750
+
+Registrant Contact
+------------------
+Organization: Google LLC
+Country: US
+Email: https://domains.markmonitor.com/whois/contact/google.com
+
+Technical Contact
+-----------------
+Email: https://domains.markmonitor.com/whois/contact/google.com
+
+
+====================
+Domain: amazon.com
+====================
+
+Domain Information
+------------------
+Domain: amazon.com
+Registered On: 1994-11-01
+Expires On: 2026-10-31
+Updated On: 2025-07-31
+
+Status:
+client delete prohibited
+client transfer prohibited
+client update prohibited
+server delete prohibited
+server transfer prohibited
+server update prohibited
+
+Name Servers:
+ns1.amzndns.co.uk
+ns1.amzndns.com
+ns1.amzndns.net
+ns1.amzndns.org
+ns2.amzndns.co.uk
+ns2.amzndns.com
+ns2.amzndns.net
+ns2.amzndns.org
+
+Registrar Information
+---------------------
+Registrar: MarkMonitor Inc.
+IANA ID: 292
+Email: https://www.markmonitor.com/contact-us/
+Abuse Email: abusecomplaints@markmonitor.com
+Abuse Phone: +1.2086851750
+
+Registrant Contact
+------------------
+Name: Hostmaster, Amazon Legal Dept.
+Organization: Amazon Technologies, Inc.
+Street: P.O. Box 8102
+City: Reno
+State: NV
+Postal Code: 89507
+Country: US
+Phone: +1.2062664064
+Fax: +1.2062667010
+Email: https://domains.markmonitor.com/whois/contact/amazon.com
+
+Technical Contact
+-----------------
+Name: Hostmaster, Amazon Legal Dept.
+Phone: +1.2062664064
+Email: https://domains.markmonitor.com/whois/contact/amazon.com
+
+
+====================
+Domain: github.com
+====================
+
+Domain Information
+------------------
+Domain: github.com
+Registered On: 2007-10-09
+Expires On: 2026-10-09
+Updated On: 2024-09-07
+
+Status:
+client delete prohibited
+client transfer prohibited
+client update prohibited
+
+Name Servers:
+dns1.p08.nsone.net
+dns2.p08.nsone.net
+dns3.p08.nsone.net
+dns4.p08.nsone.net
+ns-1283.awsdns-32.org
+ns-1707.awsdns-21.co.uk
+ns-421.awsdns-52.com
+ns-520.awsdns-01.net
+
+Registrar Information
+---------------------
+Registrar: MarkMonitor Inc.
+IANA ID: 292
+Email: https://www.markmonitor.com/contact-us/
+Abuse Email: abusecomplaints@markmonitor.com
+Abuse Phone: +1.2086851750
+
+Registrant Contact
+------------------
+Organization: GitHub, Inc.
+Country: US
+Email: https://domains.markmonitor.com/whois/contact/github.com
+
+Technical Contact
+-----------------
+Email: https://domains.markmonitor.com/whois/contact/github.com
+
+
+====================
+Domain: bbc.com
+====================
+
+Domain Information
+------------------
+Domain: bbc.com
+Registered On: 1989-07-15
+Expires On: 2030-07-14
+Updated On: 2021-07-06
+
+Status:
+client transfer prohibited
+client update prohibited
+server delete prohibited
+server transfer prohibited
+
+Name Servers:
+ddns0.bbc.co.uk
+ddns0.bbc.com
+ddns1.bbc.co.uk
+ddns1.bbc.com
+dns0.bbc.co.uk
+dns0.bbc.com
+dns1.bbc.co.uk
+dns1.bbc.com
+
+Registrar Information
+---------------------
+Registrar: Tucows Domains Inc.
+IANA ID: 69
+Abuse Email: domainabuse@tucows.com
+Abuse Phone: +1.4165350123
+
+Registrant Contact
+------------------
+Country: GB
+Email: https://tieredaccess.com/contact/61a39d49-c9df-41dd-adb0-b6396ea00f3d
+
+
+====================
+Domain: yorku.ca
+====================
+
+Domain Information
+------------------
+Domain: yorku.ca
+Registered On: 2000-10-06
+Expires On: 2026-02-14
+Updated On: 2026-01-15
+
+Status:
+client transfer prohibited
+
+Name Servers:
+dns11.ipns.yorku.ca
+dns21.ipns.yorku.ca
+hanna.cac.washington.edu
+
+Registrar Information
+---------------------
+Registrar: Webnames.ca Inc.
+IANA ID: 456
+URL: webnames.ca
+Email: support@webnames.ca
+Abuse Email: abuse@webnames.ca
+Abuse Phone: +1.8662217878
+
+Registrant Contact
+------------------
+Name: Hostmaster NetOps
+Organization: York University
+Street: 4700 Keele Street
+City: Toronto
+State: ON
+Postal Code: M3J 1P3
+Country: CA
+Phone: +1.4167365257
+Fax: +1.4167365701
+Email: https://www.webnames.ca/services/domains/privacy_contact_owner.aspx
+
+Technical Contact
+-----------------
+Name: York Hostmaster
+Phone: +1.4167365257
+Email: https://www.webnames.ca/services/domains/privacy_contact_owner.aspx
+

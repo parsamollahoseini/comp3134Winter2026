@@ -1,0 +1,39 @@
+====================
+Domain: cnn.com
+====================
+IP Address: 151.101.1.67
+City: San Francisco
+Country: United States
+
+
+====================
+Domain: reddit.com
+====================
+IP Address: 151.101.65.140
+City: San Francisco
+Country: United States
+
+
+====================
+Domain: spotify.com
+====================
+IP Address: 35.186.224.25
+City: Mountain View
+Country: United States
+
+
+====================
+Domain: microsoft.com
+====================
+IP Address: 20.81.111.85
+City: Redmond
+Country: United States
+
+
+====================
+Domain: cloudflare.com
+====================
+IP Address: 104.16.124.96
+City: San Francisco
+Country: United States
+
