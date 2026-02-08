@@ -1,0 +1,15 @@
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on en0, link-type EN10MB (Ethernet), snapshot length 524288 bytes
+12:02:13.989856 IP6 2620:149:a41:280::2:3.https > 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.59369: Flags [P.], seq 1637271129:1637271432, ack 224514266, win 16, options [nop,nop,TS val 2564220818 ecr 1059284208], length 303
+12:02:13.989858 IP6 2620:149:a41:280::2:3.https > 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.59369: Flags [P.], seq 303:606, ack 1, win 16, options [nop,nop,TS val 2564220818 ecr 1059284208], length 303
+12:02:13.989859 IP6 2620:149:a41:280::2:3.https > 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.59369: Flags [P.], seq 606:668, ack 1, win 16, options [nop,nop,TS val 2564220818 ecr 1059284208], length 62
+12:02:13.990203 IP6 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.59369 > 2620:149:a41:280::2:3.https: Flags [.], ack 668, win 2038, options [nop,nop,TS val 1059284261 ecr 2564220818], length 0
+12:02:13.990295 IP6 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.59369 > 2620:149:a41:280::2:3.https: Flags [P.], seq 287:318, ack 668, win 2048, options [nop,nop,TS val 1059284261 ecr 2564220818], length 31
+12:02:13.997002 IP6 2620:149:a41:280::2:3.https > 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.59369: Flags [P.], seq 668:699, ack 287, win 16, options [nop,nop,TS val 2564220824 ecr 1059284210], length 31
+12:02:13.997107 IP6 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.59369 > 2620:149:a41:280::2:3.https: Flags [.], ack 699, win 2048, options [nop,nop,TS val 1059284268 ecr 2564220824], length 0
+12:02:14.000469 IP6 2620:149:a41:280::2:3.https > 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.59369: Flags [.], seq 699:2127, ack 287, win 16, options [nop,nop,TS val 2564220824 ecr 1059284210], length 1428
+12:02:14.000470 IP6 2620:149:a41:280::2:3.https > 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.59369: Flags [P.], seq 2127:2672, ack 287, win 16, options [nop,nop,TS val 2564220824 ecr 1059284210], length 545
+12:02:14.000471 IP6 2620:149:a41:280::2:3.https > 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.59369: Flags [P.], seq 2672:2703, ack 287, win 16, options [nop,nop,TS val 2564220824 ecr 1059284210], length 31
+10 packets captured
+69 packets received by filter
+0 packets dropped by kernel

@@ -1,0 +1,15 @@
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on en0, link-type EN10MB (Ethernet), snapshot length 524288 bytes
+12:02:29.688602 IP6 2620:149:a41:280::1.https > 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.59401: Flags [P.], seq 4004639914:4004640575, ack 1283419932, win 16, options [nop,nop,TS val 1093972221 ecr 2196368730], length 661
+12:02:29.689146 IP6 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.59401 > 2620:149:a41:280::1.https: Flags [.], ack 661, win 67, options [nop,nop,TS val 2196368778 ecr 1093972221], length 0
+12:02:29.697188 IP6 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.59401 > 2620:149:a41:280::1.https: Flags [P.], seq 1:81, ack 661, win 67, options [nop,nop,TS val 2196368786 ecr 1093972221], length 80
+12:02:29.702130 IP6 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.59401 > 2620:149:a41:280::1.https: Flags [.], seq 81:1509, ack 661, win 67, options [nop,nop,TS val 2196368791 ecr 1093972221], length 1428
+12:02:29.702180 IP6 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.59401 > 2620:149:a41:280::1.https: Flags [P.], seq 1509:2086, ack 661, win 67, options [nop,nop,TS val 2196368791 ecr 1093972221], length 577
+12:02:29.747058 IP6 2620:149:a41:280::1.https > 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.59401: Flags [.], ack 81, win 16, options [nop,nop,TS val 1093972279 ecr 2196368786], length 0
+12:02:29.747063 IP6 2620:149:a41:280::1.https > 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.59401: Flags [P.], seq 661:964, ack 81, win 16, options [nop,nop,TS val 1093972279 ecr 2196368786], length 303
+12:02:29.747673 IP6 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.59401 > 2620:149:a41:280::1.https: Flags [.], seq 2086:2937, ack 964, win 67, options [nop,nop,TS val 2196368836 ecr 1093972279], length 851
+12:02:29.748038 IP6 2620:149:a41:280::1.https > 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.59401: Flags [P.], seq 964:1267, ack 81, win 16, options [nop,nop,TS val 1093972279 ecr 2196368786], length 303
+12:02:29.748198 IP6 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.59401 > 2620:149:a41:280::1.https: Flags [.], ack 1267, win 67, options [nop,nop,TS val 2196368837 ecr 1093972279], length 0
+10 packets captured
+193 packets received by filter
+0 packets dropped by kernel

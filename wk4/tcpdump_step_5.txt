@@ -1,0 +1,15 @@
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on en0, link-type EN10MB (Ethernet), snapshot length 524288 bytes
+12:05:30.627911 IP dns.google > 10.0.0.183: ICMP echo reply, id 20009, seq 0, length 64
+12:05:31.672113 IP dns.google > 10.0.0.183: ICMP echo reply, id 20009, seq 1, length 64
+12:05:32.724245 IP dns.google > 10.0.0.183: ICMP echo reply, id 20009, seq 2, length 64
+12:05:33.762773 IP dns.google > 10.0.0.183: ICMP echo reply, id 20009, seq 3, length 64
+12:05:34.817099 IP dns.google > 10.0.0.183: ICMP echo reply, id 20009, seq 4, length 64
+12:05:35.490388 IP dns.google > 10.0.0.183: ICMP echo reply, id 20009, seq 5, length 64
+12:05:36.512646 IP dns.google > 10.0.0.183: ICMP echo reply, id 20009, seq 6, length 64
+12:05:37.505000 IP dns.google > 10.0.0.183: ICMP echo reply, id 20009, seq 7, length 64
+12:05:38.519437 IP dns.google > 10.0.0.183: ICMP echo reply, id 20009, seq 8, length 64
+12:05:39.515150 IP dns.google > 10.0.0.183: ICMP echo reply, id 20009, seq 9, length 64
+10 packets captured
+3605 packets received by filter
+0 packets dropped by kernel

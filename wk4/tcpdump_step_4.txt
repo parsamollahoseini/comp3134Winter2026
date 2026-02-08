@@ -1,0 +1,15 @@
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on en0, link-type EN10MB (Ethernet), snapshot length 524288 bytes
+12:04:02.869596 IP6 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.54392 > 2600:1f13:37c:1400:ba21:7165:5fc7:736e.http: Flags [SEW], seq 558002569, win 65535, options [mss 1440,nop,wscale 6,nop,nop,TS val 729299243 ecr 0,sackOK,eol], length 0
+12:04:03.174476 IP 10.0.0.183.54393 > ec2-34-223-124-45.us-west-2.compute.amazonaws.com.http: Flags [SEW], seq 2924552475, win 65535, options [mss 1460,nop,wscale 6,nop,nop,TS val 2753035299 ecr 0,sackOK,eol], length 0
+12:04:03.870067 IP6 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.54392 > 2600:1f13:37c:1400:ba21:7165:5fc7:736e.http: Flags [S], seq 558002569, win 65535, options [mss 1440,nop,wscale 6,nop,nop,TS val 729300244 ecr 0,sackOK,eol], length 0
+12:04:04.174434 IP 10.0.0.183.54393 > ec2-34-223-124-45.us-west-2.compute.amazonaws.com.http: Flags [S], seq 2924552475, win 65535, options [mss 1460,nop,wscale 6,nop,nop,TS val 2753036299 ecr 0,sackOK,eol], length 0
+12:04:04.302048 IP6 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.54394 > 2600:1f13:37c:1400:ba21:7165:5fc7:736e.http: Flags [SEW], seq 3245621114, win 65535, options [mss 1440,nop,wscale 6,nop,nop,TS val 2857409293 ecr 0,sackOK,eol], length 0
+12:04:04.607210 IP 10.0.0.183.54395 > ec2-34-223-124-45.us-west-2.compute.amazonaws.com.http: Flags [SEW], seq 2873941321, win 65535, options [mss 1460,nop,wscale 6,nop,nop,TS val 4218949928 ecr 0,sackOK,eol], length 0
+12:04:04.871587 IP6 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.54392 > 2600:1f13:37c:1400:ba21:7165:5fc7:736e.http: Flags [S], seq 558002569, win 65535, options [mss 1440,nop,wscale 6,nop,nop,TS val 729301245 ecr 0,sackOK,eol], length 0
+12:04:04.990492 IP6 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.54396 > 2600:1f13:37c:1400:ba21:7165:5fc7:736e.http: Flags [SEW], seq 4093595367, win 65535, options [mss 1440,nop,wscale 6,nop,nop,TS val 1283218078 ecr 0,sackOK,eol], length 0
+12:04:04.990593 IP6 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.54397 > 2600:1f13:37c:1400:ba21:7165:5fc7:736e.http: Flags [SEW], seq 209476967, win 65535, options [mss 1440,nop,wscale 6,nop,nop,TS val 2519809091 ecr 0,sackOK,eol], length 0
+12:04:05.175355 IP 10.0.0.183.54393 > ec2-34-223-124-45.us-west-2.compute.amazonaws.com.http: Flags [S], seq 2924552475, win 65535, options [mss 1460,nop,wscale 6,nop,nop,TS val 2753037300 ecr 0,sackOK,eol], length 0
+10 packets captured
+2710 packets received by filter
+0 packets dropped by kernel

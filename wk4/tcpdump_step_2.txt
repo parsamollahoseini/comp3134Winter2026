@@ -1,0 +1,15 @@
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on en0, link-type EN10MB (Ethernet), snapshot length 524288 bytes
+12:02:22.198300 IP 18.97.36.68.443 > 10.0.0.183.54369: Flags [P.], seq 2774380844:2774380962, ack 3009576718, win 12323, options [nop,nop,TS val 2556526102 ecr 3168634115], length 118
+12:02:22.198418 IP 10.0.0.183.54369 > 18.97.36.68.443: Flags [.], ack 118, win 2047, options [nop,nop,TS val 3168634240 ecr 2556526102], length 0
+12:02:22.199395 IP6 2606:4700:4407::ac40:92d7.443 > 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.61062: quic, protected
+12:02:22.202405 IP6 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.61062 > 2606:4700:4407::ac40:92d7.443: quic, protected
+12:02:22.443625 IP6 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.59386 > 2620:149:a41:280::1c.443: Flags [SEW], seq 1245238522, win 65535, options [mss 1440,nop,wscale 6,nop,nop,TS val 1740346406 ecr 0,sackOK,eol], length 0
+12:02:22.500071 IP6 2620:149:a41:280::1c.443 > 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.59386: Flags [S.E], seq 1623205038, ack 1245238523, win 64260, options [mss 1440,sackOK,TS val 1451367359 ecr 1740346406,nop,wscale 11], length 0
+12:02:22.502254 IP6 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.59386 > 2620:149:a41:280::1c.443: Flags [.], ack 1, win 2053, options [nop,nop,TS val 1740346464 ecr 1451367359], length 0
+12:02:22.502322 IP6 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.59386 > 2620:149:a41:280::1c.443: Flags [.], seq 1:1429, ack 1, win 2053, options [nop,nop,TS val 1740346466 ecr 1451367359], length 1428
+12:02:22.502331 IP6 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.59386 > 2620:149:a41:280::1c.443: Flags [P.], seq 1429:1542, ack 1, win 2053, options [nop,nop,TS val 1740346466 ecr 1451367359], length 113
+12:02:22.562810 IP6 2620:149:a41:280::1c.443 > 2607:fea8:3fe3:5300:6c57:9dd5:92df:2f36.59386: Flags [.], ack 1542, win 31, options [nop,nop,TS val 1451367424 ecr 1740346466], length 0
+10 packets captured
+84 packets received by filter
+0 packets dropped by kernel
