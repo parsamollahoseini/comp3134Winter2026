@@ -1,0 +1,2 @@
+sudo systemctl daemon-reload
+ssh -p 2222 root@159.89.115.63
