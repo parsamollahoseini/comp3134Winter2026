@@ -1,0 +1,71 @@
+Mitigation Strategy for Directory Traversal Vulnerabilities
+
+Problem 1: Users can traverse to parent directories (e.g., using ../)
+Solution: Use basename() function
+- basename() extracts only the final component of a path
+- It removes any directory traversal attempts like "../"
+- Example: basename("../../etc/passwd") returns "passwd" only
+- This prevents users from accessing parent directories
+
+Implementation:
+$path = isset($_GET['q']) ? basename($_GET['q']) : '.';
+
+Problem 2: Users can access non-existent directories, causing error messages
+Solution: Use file_exists() function
+- file_exists() checks if a file or directory exists before accessing it
+- This prevents error messages from being displayed
+- Helps avoid information disclosure through error messages
+
+Implementation:
+if (file_exists($path) && is_dir($path)) {
+    // Safe to proceed
+} else {
+    echo "Invalid directory";
+    exit;
+}
+
+BONUS: Prevent users from passing a filename (only allow directories)
+Solution: Check for dots in the parameter and validate it's a directory
+- Look for "." in the parameter (filenames usually have extensions like .txt, .php)
+- Use is_dir() to verify the path is actually a directory
+
+Implementation:
+if (strpos($path, '.') !== false && $path !== '.') {
+    echo "Only directories are allowed";
+    exit;
+}
+
+Complete Mitigation Implementation:
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+// Get the path parameter and sanitize it
+$path = isset($_GET['q']) ? basename($_GET['q']) : '.';
+
+// Prevent filename access (bonus)
+if (strpos($path, '.') !== false && $path !== '.') {
+    echo "Only directories are allowed";
+    exit;
+}
+
+// Check if path exists and is a directory
+if (!file_exists($path) || !is_dir($path)) {
+    echo "Invalid directory specified";
+    exit;
+}
+
+// Safe to display directory contents
+print "<pre>";
+print_r(scandir($path));
+print "</pre>";
+?>
+
+Security Benefits:
+1. basename() prevents directory traversal attacks
+2. file_exists() and is_dir() prevent error message disclosure
+3. Additional validation prevents file access
+4. Users are restricted to the current directory only
+5. No sensitive system information is leaked
+6. Attackers cannot navigate the file system

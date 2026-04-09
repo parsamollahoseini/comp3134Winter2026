@@ -1,0 +1,68 @@
+Mitigation Strategy for Sensitive Information in HTML Comments
+
+Problem:
+HTML comments (<!-- -->) are visible in the browser's source code when users click
+"View Page Source" or use browser developer tools. This exposes sensitive information
+such as:
+- Employee IDs and names
+- Passwords and credentials
+- Database server information
+- API keys
+- Network configuration details
+- Internal system architecture
+
+Why HTML Comments Are Dangerous:
+1. HTML comments are sent to the client's browser as part of the page
+2. They are visible to anyone who views the page source
+3. Search engines may index commented content
+4. Automated scanners can extract this information
+5. Attackers can use this information for:
+   - Social engineering attacks
+   - Credential stuffing
+   - Direct system access
+   - Network reconnaissance
+   - API exploitation
+
+Solution: Convert HTML comments to PHP comments
+
+PHP Comments:
+- // Single line comment
+- /* Multi-line comment */
+- # Hash comment
+
+PHP comments are processed on the server side and are NOT sent to the client's browser.
+This means they are completely invisible to users viewing the page source.
+
+Implementation:
+Instead of:
+    <!--Created by John Smith with employee id: 123456 -->
+
+Use:
+    <?php // Created by John Smith with employee id: 123456 ?>
+or
+    <?php /* Created by John Smith with employee id: 123456 */ ?>
+
+Benefits of PHP Comments:
+1. Comments remain in the source code for developers
+2. Sensitive information is never sent to the client
+3. No exposure in browser's "View Source"
+4. Not visible in developer tools
+5. Cannot be indexed by search engines
+6. Provides same documentation benefits without security risk
+
+Best Practices:
+1. Never put sensitive information in HTML comments
+2. Use server-side comments (PHP, Python, etc.) for internal notes
+3. Remove all commented-out code before production deployment
+4. Use proper configuration files for sensitive data (not in code)
+5. Store credentials in environment variables or secure vaults
+6. Regularly audit code for exposed sensitive information
+7. Use .gitignore to prevent committing sensitive files
+8. Implement automated security scanning in CI/CD pipeline
+
+Alternative Solutions:
+- Store configuration in separate config files (outside web root)
+- Use environment variables for sensitive data
+- Implement proper secret management systems
+- Use encrypted configuration files
+- Maintain separate documentation outside of source code

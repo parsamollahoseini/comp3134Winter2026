@@ -1,0 +1,35 @@
+Directory Traversal 2 - URL: directory_traversal_part1.php?q=%2e%2e%2f
+
+What you see on the browser (the issue):
+The URL uses URL encoding where:
+- %2e = . (dot)
+- %2f = / (forward slash)
+So %2e%2e%2f decodes to "../" (parent directory)
+
+The browser displays the contents of the parent directory (one level up from the web root).
+This demonstrates that the application is vulnerable to URL-encoded directory traversal attacks,
+meaning simple input validation checking for "../" can be bypassed using encoding.
+
+The output shows files and directories from /var/www/, exposing the same type of information
+as the previous traversal attempt but using an encoding technique to bypass basic filters.
+
+Sensitive information given by this page:
+1. The application doesn't sanitize or validate URL-encoded input
+2. Simple blacklist filters (blocking "../") can be easily bypassed
+3. Directory structure one level above the web root
+4. Names of configuration files and other web applications
+5. System directory names and structure
+6. This reveals that the application has weak input validation
+7. Attackers can use various encoding techniques:
+   - URL encoding (%2e%2e%2f)
+   - Double encoding (%252e%252e%252f)
+   - Unicode encoding
+   - Mixed encoding
+8. This vulnerability demonstrates:
+   - Lack of proper input sanitization
+   - Absence of whitelist validation
+   - No canonicalization of paths
+   - Inadequate security controls
+
+This is particularly dangerous because it shows that even if basic filters exist,
+they can be bypassed using encoding techniques, making the application highly vulnerable.

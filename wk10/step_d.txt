@@ -1,0 +1,21 @@
+Mystery Task 1 - URL: directory_traversal_part1.php?q=hello
+
+What you see on the browser (the issue):
+When accessing the URL with "q=hello", the browser displays a PHP warning/error message:
+"Warning: scandir(hello): failed to open dir: No such file or directory"
+or a similar error message indicating that the directory "hello" does not exist.
+
+The page attempts to scan a directory named "hello" which doesn't exist on the server,
+resulting in an error being displayed to the user.
+
+Sensitive information given by this page:
+1. Error messages reveal the server's file system structure and absolute path
+   (e.g., /var/www/html/directory_traversal_part1.php)
+2. The error exposes that the application is using PHP's scandir() function
+3. It reveals the server's error reporting is enabled (display_errors = 1)
+4. The error message shows the web root directory location on the server
+5. This information can be used by attackers to:
+   - Understand the server's directory structure
+   - Plan directory traversal attacks
+   - Identify the technology stack being used
+   - Exploit known vulnerabilities in the exposed functions

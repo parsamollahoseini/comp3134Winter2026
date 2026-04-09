@@ -1,0 +1,31 @@
+Directory Traversal 1 - URL: directory_traversal_part1.php?q=../../
+
+What you see on the browser (the issue):
+The browser displays a list of files and directories from two levels above the current directory
+(the web root). This is a directory traversal vulnerability where the attacker can navigate
+outside of the intended directory (/var/www/html) to access parent directories.
+
+The output shows directories and files from /var/www/ or even higher up in the file system,
+potentially exposing:
+- Configuration files
+- Other web applications
+- System directories
+- Hidden files and folders
+
+Sensitive information given by this page:
+1. Directory structure of the entire server (not just the web root)
+2. Names of other applications/websites hosted on the same server
+3. System configuration directories (e.g., etc, var, usr)
+4. Potential access to sensitive files like:
+   - Database configuration files
+   - Password files
+   - SSH keys
+   - Log files containing sensitive information
+5. Information about other users on the system
+6. Server architecture and organization
+7. This vulnerability allows attackers to:
+   - Map the entire file system
+   - Find sensitive configuration files
+   - Locate backup files
+   - Discover other attack vectors
+   - Potentially read sensitive data if combined with other vulnerabilities

